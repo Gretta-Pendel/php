@@ -1,0 +1,33 @@
+[[downlinks]]
+name = "M101"
+useSerial = false
+
+targ232.chnlName = "M101"
+targ232.baudRate = "9600"
+targ232.portName = "/devices/3_serial1" # /dev/ttyUSB0
+
+targTCP.chnlName = "M101"
+targTCP.ipAddress = "172.25.208.1"
+targTCP.ipPort = 2404
+
+[[downlinks.devices]]
+linkAddress = 3
+asduAddrSize = 1
+cotSize = 1
+infoObjAddrSize = 3
+
+[[downlinks.devices]]
+linkAddress = 3
+asduAddrSize = 1
+cotSize = 1
+infoObjAddrSize = 3
+
+
+[[uplinks]]
+name = "S104"
+
+targTCP.chnlName = "S104"
+targTCP.ipAddress = "*.*.*.*"
+targTCP.ipPort = 2404
+
+originatorAddress = 4
